@@ -1,6 +1,8 @@
-﻿namespace Teste_Xbits.Domain.Entities;
+﻿using Teste_Xbits.Domain.Entities.Base;
 
-public class Product
+namespace Teste_Xbits.Domain.Entities;
+
+public class Product : BaseEntity
 {
     public long Id { get; set; }
     public string? Name { get; set; }
@@ -8,4 +10,6 @@ public class Product
     
     public long CategoryId { get; set; }
     public Category? Category { get; set; }
+    
+    
 }
